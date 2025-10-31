@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estefanía Rodriguez - Bienes Raíces</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Donde encontrar tu propiedad ideal.">
+    <meta name="keywords" content="Bienes Raíces, Inmuebles, Compra y Venta, Casas, terrenos, apartamentos, locales, oficinas">
+    <meta name="author" content="Larm">
+    <link rel="stylesheet" href="../Estilos/Styles.css">
+</head>
+<body>
+    <header>
+          <main class="center">
+            <button onclick="window.location.href='login.html'" class="btn-primary"> Iniciar sesión </button>
+          </main>
+        <h1>Estefanía Rodriguez</h1>
+        <h2>Bienes Raíces</h2>
+        <h4>Donde encontrar tu propiedad ideal</h4>
+        <nav class="Barra de navegación">
+            <ul>
+                <li><a href="../Inicio/Index.html">Inicio</a></li>
+                <li><a href="/Apartamentos/Inmoviliaria_Apartamentos.html">Apartamentos</a></li>
+                <li><a href="/Casas/Inmoviliaria_Casas.html">Casas</a></li>
+                <li><a href="/Terrenos/Inmoviliaria_Terrenos.html">Terrenos</a></li>
+                <li><a href="/Locales/Inmoviliaria_Locales.html">Locales</a></li>
+                <li><a href="/Nosotros_Contactos/Nosotros y Contactos.html">Contactos</a></li>
+                <li class="search">
+                   </div>
+               </li>
+            </ul>
+        </nav>
+    </header>
+         <div>
+            <h2>Buscar Propiedades</h2>
+                     <form id="searchForm">
+                       <label>Tipo</label>
+                       <select id="tipoBusqueda">
+                           <option value="">Cualquiera</option>
+                           <option>Casa</option>
+                           <option>Apartamento</option>
+                           <option>Local</option>
+                           <option>Terreno</option>
+                        </select>
+
+                            <label>Precio mínimo</label>
+                            <input type="number" id="minPrecio">
+                            
+                            <label>Precio máximo</label>
+                            <input type="number" id="maxPrecio">
+
+                            <label>Habitaciones</label>
+                            <input type="number" id="minHabitaciones">
+                            
+                            <label>Metros cuadrados</label>
+                            <input type="number" id="metrosCuadrados">
+                            
+                            <label>Zona o ubicación</label>
+                            <input type="text" id="zona">
+
+                            <button type="submit">Buscar</button>
+                            </form>
+
+        <div id="resultados"></div>
+
+</body>
+</html>
