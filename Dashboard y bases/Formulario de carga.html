@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargar Inmueble</title>
+  <link rel="stylesheet" href="../Estilos/Styles.css">
+</head>
+<body>
+  <h2>Registrar nuevo inmueble</h2>
+  <form id="uploadForm">
+
+    <label>Tipo de inmueble</label>
+    <select id="tipo">
+      <option>Casa</option>
+      <option>Apartamento</option>
+      <option>Local</option>
+      <option>Terreno</option>
+      <option>Otro</option>
+    </select>
+
+    <label>Tamaño (m²)</label>
+    <input type="number" id="tamano">
+
+    <label>Habitaciones</label>
+    <input type="number" id="habitaciones">
+
+    <label>Baños</label>
+    <input type="number" id="banos">
+
+    <label>Estacionamiento</label>
+    <input type="number" id="parqueaderos" placeholder="0 si no tiene">
+
+    <label>Ubicación (texto)</label>
+    <input type="text" id="ubicacion">
+
+    <label>Mapa (geolocalización manual)</label>
+    <div id="map" style="width:50%;height:200px;background:#ccc;">[Mapa aquí]</div>
+
+    <label>Fotos</label>
+    <input type="file" id="fotos" multiple>
+
+    <label>Precio</label>
+    <input type="number" id="precio">
+
+    <button type="submit">Guardar inmueble</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* =========================    ESTILOS GLOBALES ========================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* =========================    CABECERA Y NAVEGACIÓN ========================= */
+header {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo / título principal */
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Subtítulo o descripción */
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #023e8a;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00b4d8;
+}
+
+/* Buscador dentro del nav */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search input[type="text"] {
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search button {
+  padding: 6px 12px;
+  font-size: 15px;
+  background-color: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search button:hover {
+  background-color: #0077b6;
+}
+
+/* =========================    SECCIONES GENERALES ========================= */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  color: #0077b6;
+  border-left: 4px solid #00b4d8;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+/* =========================    BANNER PRINCIPAL (TEAM) ========================= */
+
+.team-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 40px; /* 🔹 deja espacio arriba y abajo */
+  height: 120px;
+  max-width: 200px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: visible; /* <- Importante: permite que la imagen sobresalga */
+  padding: 1.5rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.team-banner img {
+  position: absolute;
+  top: -50px; /* sobresale hacia arriba */
+  left: 50%;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+  object-position: center-top;
+}
+
+.team-banner h3 {
+  position: relative;
+  z-index: 2; /* 🔹 se asegura de que quede por encima de la imagen */
+  margin-top: 140px; /* 🔹 empuja el texto hacia abajo debajo de la imagen */
+  color: #023e8a;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* =========================    EQUIPO / MIEMBROS ========================= */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.member {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: visible; /* <- Importante: permite que la imagen sobresalga */
+  width: 280px;
+  height: 240px; /* un poco menos alto */
+  text-align: center;
+  transition: transform 0.3s;
+  padding-top: 50px; /* deja espacio arriba para la imagen */
+}
+
+.member:hover {
+  transform: translateY(-10px);
+}
+
+.member img {
+  position: absolute;
+  top: -50px; /* sobresale hacia arriba */
+  left: 50%;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+  object-position: center-top;
+}
+
+.member:nth-child(2) img {
+  transform: scale(1.4) translateY(10%) translateX(-50%); /* escala la segunda imagen */
+}
+
+.member h3 {
+  margin-top: 130px; /* ajusta según tamaño de la imagen */
+  color: #023e8a;
+}
+
+.member p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+
+/* =========================    PIE DE PÁGINA ========================= */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #023e8a;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* =========================    ENLACES GENERALES ======================== */
+a {
+  color: #00b4d8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0077b6;
+}
